@@ -8,6 +8,9 @@ ALLOWED_HOSTS = os.environ.get(
     "ALLOWED_HOSTS",
     "localhost,127.0.0.1,jungle-protein-menu.onrender.com"
 ).split(",")
+CSRF_TRUSTED_ORIGINS = [
+    "https://jungle-protein-menu.onrender.com",
+]
 INSTALLED_APPS = [
     "django.contrib.admin", "django.contrib.auth", "django.contrib.contenttypes",
     "django.contrib.sessions", "django.contrib.messages", "django.contrib.staticfiles", "django.contrib.humanize",
